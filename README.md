@@ -8,3 +8,6 @@
   2) In the terminal, run `npm install`
   3) Run `npm run dev` to view project in browser
   
+
+
+  ## Continuar desde: https://youtu.be/AHtSIP-pRL4?t=2575
