@@ -11,3 +11,9 @@
 
 
   ## Continuar desde: https://youtu.be/AHtSIP-pRL4?t=2575
+
+  ## Locofy
+
+  - https://www.locofy.ai/dashboard/my-projects
+
+  - https://www.locofy.ai/builder/64baa39f682ffa39377067a8?screen=308%3A1687
