@@ -1,13 +1,31 @@
 import "antd/dist/antd.min.css";
 import { Pagination, Dropdown } from "antd";
 import {DownOutlined} from "@ant-design/icons";
+import { createClient } from "@supabase/supabase-js";
+
 import Header from "../components/header";
 import PropertyGridContainer from "../components/property-grid-container";
 import Footer from "../components/footer";
+import { useEffect, useState } from "react";
 
 const defaultOrder = [];
 
 const PropertiesGridView = () => {
+  const client = createClient(process.env.NEXT_PUBLIC_URL, process.env.NEXT_PUBLIC_KEY);
+
+  const [properties, setproperties] = useState([]);
+
+  useEffect(() => {
+    const fetchProperties = async() => {
+      const result =  await client.from('properties').select('*');
+      
+      setproperties(result.data);
+    }
+
+    fetchProperties();
+  }, [])
+  
+
   return (
     <div className="bg-gray-white w-full flex flex-col items-start justify-start text-center text-33xl text-gray-white font-body-regular-400">
       <Header hamburger={false} />
@@ -42,7 +60,7 @@ const PropertiesGridView = () => {
             </Dropdown>
           </div>
         </div>
-        <PropertyGridContainer />
+        <PropertyGridContainer allProperties={properties} />
         <div className="flex flex-row items-end justify-center gap-[8px] text-center text-primary-500">
           <Pagination 
             defaultCurrent={1}
