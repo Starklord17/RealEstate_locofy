@@ -10,9 +10,7 @@
   
 
 
-  ## Continuar desde: https://youtu.be/AHtSIP-pRL4?t=2575
-
-  https://youtu.be/AHtSIP-pRL4?t=4219
+  ## Youtube: https://youtu.be/AHtSIP-pRL4
 
   ## Locofy
 
