@@ -20,4 +20,6 @@
 
   - https://www.locofy.ai/builder/64baa39f682ffa39377067a8?screen=308%3A1687
 
-```npm i @supabase/supabase-js```
+  - https://supabase.com
+
+    ```npm i @supabase/supabase-js```
