@@ -12,6 +12,8 @@
 
   ## Continuar desde: https://youtu.be/AHtSIP-pRL4?t=2575
 
+  https://youtu.be/AHtSIP-pRL4?t=4219
+
   ## Locofy
 
   - https://www.locofy.ai/dashboard/my-projects

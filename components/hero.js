@@ -1,32 +1,16 @@
 import "antd/dist/antd.min.css";
 import { Menu, Dropdown, Button } from "antd";
-import {
-  DownOutlined,
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CheckOutlined,
-  ClockCircleOutlined,
-  CloseOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  ExclamationCircleOutlined,
-  HeartOutlined,
-  LeftOutlined,
-  LockOutlined,
-  MailOutlined,
-  PaperClipOutlined,
-  PhoneOutlined,
-  QuestionCircleOutlined,
-  ReloadOutlined,
-  RightOutlined,
-  SearchOutlined,
-  SendOutlined,
-  ShareAltOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import {DownOutlined} from "@ant-design/icons";
+import {useRouter} from "next/router";
 
 const Hero = () => {
+
+  const router = useRouter();
+
+  const onSearchCTAClick = () => {
+    router.push("/properties");
+  };
+
   return (
     <div className="self-stretch flex flex-col py-[120px] px-[30px] items-center justify-start bg-[url(/hero-section@3x.png)] bg-cover bg-no-repeat bg-[top] text-center text-33xl text-gray-white font-body-regular-400">
       <div className="self-stretch flex flex-col items-center justify-center gap-[62px] max-w-[95%px]">
